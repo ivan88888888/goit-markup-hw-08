@@ -1,0 +1,68 @@
+/* 2. Section Benefits */
+.benefits {
+background-color: var(--benefits-section-bg-color);
+
+padding-top: 94px;
+padding-bottom: 0px;
+
+    .benefits__list {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+    .benefits__item {
+    width: 270px;
+    }
+}
+
+.benefits__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.benefits__container {
+    background: #F5F4FA;
+
+    border-radius: 4px;
+
+    width: 270px;
+    height: 120px;
+
+    margin-bottom: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.benefits__title {
+    color: var(--primary-text-color);
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.145;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    width: 270px;
+
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+.benefits__text {
+    color: var(--second-text-color);
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+    
+    width: 270px;
+
+    margin-top: 0px;
+}
