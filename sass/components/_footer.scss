@@ -20,24 +20,27 @@
     margin-left: auto;
     margin-right: auto;
 
-    @media screen and (min-width: 768px) {
-    display: flex;
-    align-items: baseline;
-    justify-content: center;
-    }
-
     @media screen and (min-width: 1200px) {
     display: flex;
     align-items: baseline;
+    }
 
-    margin: 0;
-    padding: 0;
+    @media screen and (min-width: 768px) and (max-width: 1199.5px) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
     }
 }
 
-.footer__section {
+.container__logo {
+    @media screen and (min-width: 768px) and (max-width: 1199.5px) {
+        margin-bottom: 60px;
+    }
     @media screen and (min-width: 1200px) {
-    text-align: start;
+        text-align: start;
+        margin-right: 70px;
     }
 }
 
@@ -76,6 +79,10 @@
     margin-top: 0px;
     margin-bottom: 0px;
     padding-left: 0px;
+
+    @media screen and (min-width: 1200px) {
+        width: 231px;
+    }
 }
 
 .footer__item:not(:last-child) {
@@ -150,17 +157,13 @@
 
 /* Join */
 .join {
-    padding-top: 60px;
-    padding-bottom: 60px;
-
-    @media screen and (min-width: 768px) {
-    padding: 0px;
-    margin-left: 165px;
+    @media screen and (max-width: 767px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
-
     @media screen and (min-width: 1200px) {
-    margin-left: 70px;
-    text-align: start;
+        margin-right: 93px;
+        text-align: start;
     }
 
     .join-title {
@@ -236,9 +239,6 @@
 
 /* Subscribe */
 .subscribe {
-    @media screen and (min-width: 1200px) {
-    margin-left: 93px;
-    }
 
     .subscribe-title {
     margin: 0px;
@@ -305,6 +305,7 @@
 
     @media screen and (min-width: 1200px) {
     margin-right: 12px;
+    margin-bottom: 0px;
 
     width: 358px;
     }
