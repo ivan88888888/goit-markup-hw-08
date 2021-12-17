@@ -6,15 +6,41 @@
     padding-bottom: 60px;
 
     text-align: center;
+
+    @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    }
 }
 
 .footer__conteiner {
-    // display: flex;
-    // align-items: baseline;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+
+    @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+
+    padding-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+
+    margin: 0;
+    padding: 0;
+    }
+}
+
+.footer__section {
+    @media screen and (min-width: 1200px) {
+    text-align: start;
+    }
 }
 
 .footer__logo {
@@ -30,6 +56,11 @@
     display: inline-block;
 
     margin-bottom: 20px;
+
+    @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+    }
 }
 
 .footer__text-logo {
@@ -51,6 +82,10 @@
 
 .footer__item:not(:last-child) {
     margin-bottom: 8px;
+
+    @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+    }
 }
 
 .footer__link-map {
@@ -115,11 +150,20 @@
 
 
 
-/* Друга частина футеру */
+/* Join */
 .join {
-    // margin-left: 70px;
     padding-top: 60px;
     padding-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+    padding: 0px;
+    margin-left: 165px;
+    }
+
+    @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+    text-align: start;
+    }
 
     .join-title {
     padding: 0px;
@@ -135,8 +179,6 @@
     color: #FFFFFF;
     }
 }
-
-
 
 .join-social__list {
     margin: 0px;
@@ -194,9 +236,11 @@
 
 
 
-/* Третя частина футера */
+/* Subscribe */
 .subscribe {
-    // margin-left: 93px;
+    @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+    }
 
     .subscribe-title {
     margin: 0px;
@@ -209,11 +253,17 @@
     text-transform: uppercase;
 
     color: var(--white-text-color);
+
+        @media screen and (min-width: 1200px) {
+        text-align: start;
+        }
     }
 }
 
 .subscribe-form {
-    // display: flex;
+    @media screen and (min-width: 1200px) {
+    display: flex;
+    }
 }
 
 .subscribe-form__input {
@@ -221,7 +271,6 @@
     // margin-right: 12px;
     margin-bottom: 20px;
 
-    // width: 450px;
     height: 50px;
 
     color: #ffffff;
@@ -251,6 +300,15 @@
     letter-spacing: 0.03em;
 
     color: rgba(255, 255, 255, 0.6);
+    }
+    @media screen and (min-width: 480px) {
+    width: 450px;
+    }
+
+    @media screen and (min-width: 1200px) {
+    margin-right: 12px;
+
+    width: 358px;
     }
 }
 

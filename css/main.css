@@ -625,7 +625,7 @@ a {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .team__item:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -814,11 +814,43 @@ a {
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+  }
+}
+
 .footer__conteiner {
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__conteiner {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__conteiner {
+    display: flex;
+    align-items: baseline;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__section {
+    text-align: start;
+  }
 }
 
 .footer__logo {
@@ -830,6 +862,13 @@ a {
   letter-spacing: 0.03em;
   display: inline-block;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .footer__text-logo {
@@ -849,6 +888,12 @@ a {
 
 .footer__item:not(:last-child) {
   margin-bottom: 8px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 .footer__link-map {
@@ -897,10 +942,24 @@ a {
   color: var(--accent-text-color);
 }
 
-/* Друга частина футеру */
+/* Join */
 .join {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .join {
+    padding: 0px;
+    margin-left: 165px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .join {
+    margin-left: 70px;
+    text-align: start;
+  }
 }
 
 .join .join-title {
@@ -957,7 +1016,13 @@ a {
   fill: var(--white-text-color);
 }
 
-/* Третя частина футера */
+/* Subscribe */
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    margin-left: 93px;
+  }
+}
+
 .subscribe .subscribe-title {
   margin: 0px;
   margin-bottom: 20px;
@@ -967,6 +1032,18 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-text-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe .subscribe-title {
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-form {
+    display: flex;
+  }
 }
 
 .subscribe-form__input {
@@ -994,6 +1071,19 @@ a {
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (min-width: 480px) {
+  .subscribe-form__input {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-form__input {
+    margin-right: 12px;
+    width: 358px;
+  }
 }
 
 .subscribe-form__button {
