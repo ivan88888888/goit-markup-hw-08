@@ -313,6 +313,7 @@ a {
 }
 
 .overlay {
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   background-size: cover;
