@@ -25,13 +25,13 @@
                     width="40px" 
                     height="40px" 
                     aria-label="Переключатель мобільного меню">
-                        <use class="icon-cross" href="./images/sprite.svg#icon-cross"></use>
-                        <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
+                        <use class="mobil-menu-close" href="./images/sprite.svg#mobil-menu-close"></use>
+                        <use class="mobil-menu-open" href="./images/sprite.svg#mobil-menu-open"></use>
                     </svg>
                 </button>
             </div>
-            <!-- <nav class="nav"> -->
-                <!-- <ul class="nav__list">
+            <nav class="nav">
+                <ul class="nav__list">
                     <li class="nav__item">
                         <a href="" class="nav__link nav__link--current">Студия</a>
                     </li>
@@ -41,8 +41,8 @@
                     <li class="nav__item">
                         <a href="" class="nav__link">Контакты</a>
                     </li>
-                </ul> -->
-            <!-- </nav> -->
+                </ul>
+            </nav>
                 <!-- <ul class="header-contacts">
                     <li class="header-contacts__item">
                         <a href="mailto:info@devstudio.com" class="header-contacts__link">
@@ -64,7 +64,7 @@
 
 
 
-<main_section>
+<main-section>
 <!--1. Section Hero-->
 <section class="hero overlay">
     <div>
@@ -74,9 +74,7 @@
         <div class="backdrop is-hidden" data-modal>
             <div class="modal"> 
                 <form class="form">
-                    <div class="form__container-title">
                         <b class="form__title">Оставьте свои данные, мы вам перезвоним</b>
-                    </div>
                     <div class="form__field">
                         <label for="name" class="form__label">Имя</label>
                             <span class="form__icon">
@@ -486,10 +484,10 @@
             </ul>
         </div>
         <div class="subscribe">
-            <h3 class="subscribe-title">Подпишитесь на рассылку</h2>
+            <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
                 <form class="subscribe-form">
                     <label for="email"></label>
-                    <input type="email" class="subscribe-form__input" name="email" id="email" placeholder="E-mail">
+                    <input type="email" class="subscribe-form__input" name="email" placeholder="E-mail">
                     <button type="submit" class="subscribe-form__button">Подписаться
                         <svg class="subscribe-form__icon" width="24" height="24">
                             <use href="./images/sprite.svg#icon-icon-send"></use>

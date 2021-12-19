@@ -75,8 +75,8 @@ a {
 @media screen and (min-width: 1200px) {
   .header {
     display: flex;
-    justify-content: flex-start;
     align-items: center;
+    justify-content: flex-start;
   }
 }
 
@@ -95,23 +95,27 @@ a {
     background-color: transparent;
     padding: 10px 0px 10px 0px;
   }
-  .menu__button .icon-cross {
-    display: none;
-  }
-  .menu__button.is-open .icon-cross {
-    display: block;
-  }
-  .menu__button.is-open .icon-menu {
-    display: none;
-  }
-  .is-open {
-    display: inline-flex;
-    margin: 0px;
-    padding: 0px;
-    border: none;
-    outline: none;
-    background-color: transparent;
-  }
+}
+
+.menu__button .mobil-menu-close {
+  display: none;
+}
+
+.menu__button.is-open .mobil-menu-close {
+  display: block;
+}
+
+.menu__button.is-open .icon-menu {
+  display: none;
+}
+
+.is-open {
+  display: inline-flex;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  outline: none;
+  background-color: transparent;
 }
 
 .logo {
@@ -152,6 +156,7 @@ a {
 }
 
 .nav__list {
+  display: flex;
   margin-top: 0px;
   margin-bottom: 0px;
   padding-left: 0px;
@@ -254,7 +259,7 @@ a {
   }
 }
 
-.hero .hero__title {
+.hero__title {
   color: var(--white-text-color);
   font-weight: 900;
   font-size: 26px;
@@ -267,7 +272,7 @@ a {
 }
 
 @media screen and (min-width: 480px) {
-  .hero .hero__title {
+  .hero__title {
     width: 360px;
     height: 84px;
     font-size: 26px;
@@ -276,7 +281,7 @@ a {
 }
 
 @media screen and (min-width: 1200px) {
-  .hero .hero__title {
+  .hero__title {
     width: 696px;
     height: 120px;
     font-size: 44px;
@@ -313,12 +318,36 @@ a {
   margin-right: auto;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobil-1x.jpg);
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobil-2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tablet-1x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tablet-2x.jpg);
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .overlay {
-    height: 600px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-1x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-2x.jpg);
   }
 }
 
@@ -343,6 +372,7 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  padding: 40px 40px;
   background-color: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -352,13 +382,13 @@ a {
   .modal {
     width: 100vw;
     height: 100vh;
+    padding: 40px 15px 15px 15px;
   }
 }
 
 @media screen and (min-width: 480px) {
   .modal {
     width: 450px;
-    padding: 40px 40px;
   }
 }
 
@@ -374,16 +404,6 @@ a {
   width: 100%;
 }
 
-@media screen and (min-width: 480px) {
-  .form__container-title {
-    width: 370px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
 .form__title {
   margin-bottom: 12px;
   font-weight: 700;
@@ -394,20 +414,29 @@ a {
   color: #212121;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 479px) {
   .form__title {
+    width: 270px;
+    height: 40px;
     font-size: 20px;
     line-height: 1.13;
   }
 }
 
+@media screen and (min-width: 480px) {
+  .form__title {
+    width: 370px;
+    height: 60px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .form__title {
+    width: 448px;
+    height: 23px;
     display: block;
     display: flex;
     justify-content: center;
-    width: 448px;
-    height: 23px;
   }
 }
 
@@ -563,7 +592,7 @@ a {
   position: relative;
   width: 16px;
   height: 15px;
-  background-image: url("../images/2(1).svg");
+  background-image: url("../images/checkbox-off.svg");
   margin-right: 8.38px;
   cursor: pointer;
   display: flex;
@@ -579,7 +608,7 @@ a {
 }
 
 .checkbox__input:checked + .checkbox__box {
-  background-image: url("../images/icon.svg");
+  background-image: url("../images/checkbox-on.svg");
 }
 
 .checkbox__link {

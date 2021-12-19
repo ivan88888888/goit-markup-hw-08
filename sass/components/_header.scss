@@ -7,8 +7,8 @@
 
         @media screen and (min-width: 1200px) {
         display: flex;
-        justify-content: flex-start;
         align-items: center;
+        justify-content: flex-start;
         }
 }
 
@@ -30,13 +30,14 @@
     padding: 10px 0px 10px 0px;
     // width: 40px;
     // height: 40px;
+    }
 }
 
-.menu__button .icon-cross {
+.menu__button .mobil-menu-close {
     display: none;
 }
 
-.menu__button.is-open .icon-cross {
+.menu__button.is-open .mobil-menu-close {
     display: block;
 }
 
@@ -52,7 +53,7 @@
     outline: none;
     background-color: transparent;
 }
-}
+
 
 .logo {
     color: var(--accent-text-color);
@@ -87,7 +88,7 @@
 }
 
 .nav__list {
-    // display: flex;
+    display: flex;
 
     margin-top: 0px;
     margin-bottom: 0px;
