@@ -4,14 +4,13 @@
 // Studio
 @import './components/header';
 @import './components/hero';
-@import './components/section-benefits';
-@import './components/section-what_we_do';
-@import './components/section-our_team';
-@import './components/section-regular_customers';
+@import './components/benefits';
+@import './components/product';
+@import './components/team';
+@import './components/clients';
 @import './components/footer';
 
 // Portfolio
-@import './components/section';
-@import './components/hidden-title';
-@import './components/button';
-@import './components/cards';
+@import './components/main-portfolio';
+@import './components/button-portfolio';
+@import './components/cards-portfolio';

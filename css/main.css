@@ -546,7 +546,6 @@ a {
 }
 
 .checkbox__box {
-  position: relative;
   width: 16px;
   height: 15px;
   background-image: url("../images/checkbox-off.svg");
@@ -558,10 +557,11 @@ a {
 }
 
 .checkbox__input {
-  position: absolute;
+  position: relative;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  display: none;
 }
 
 .checkbox__input:checked + .checkbox__box {
@@ -626,7 +626,7 @@ a {
   }
 }
 
-/* 2. Section Benefits */
+/* Benefits */
 .benefits {
   background-color: var(--benefits-section-bg-color);
   padding-top: 60px;
@@ -681,7 +681,7 @@ a {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .benefits__item:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -840,11 +840,6 @@ a {
   .team__list {
     display: flex;
     flex-wrap: wrap;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .team__list {
     margin: -15px;
   }
 }
@@ -958,7 +953,7 @@ a {
   background-color: var(--accent-text-color);
 }
 
-/* 4. Section clients */
+/* Clients */
 .clients {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -1072,9 +1067,8 @@ a {
 /* Footer */
 .footer {
   background-color: var(--footer-bg-color);
-  padding-top: 60px;
-  padding-bottom: 60px;
   text-align: center;
+  padding: 60px 15px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1085,27 +1079,34 @@ a {
   }
 }
 
+.hidden-title {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+}
+
 .footer__conteiner {
-  padding-left: 15px;
-  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__conteiner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .footer__conteiner {
     display: flex;
-    align-items: baseline;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199.5px) {
-  .footer__conteiner {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-start;
   }
 }
 
@@ -1220,8 +1221,7 @@ a {
 /* Join */
 @media screen and (max-width: 767px) {
   .join {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    margin: 60px 0px 60px 0px;
   }
 }
 
@@ -1337,6 +1337,12 @@ a {
   color: rgba(255, 255, 255, 0.6);
 }
 
+@media screen and (min-width: 320px) {
+  .subscribe-form__input {
+    width: 290px;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .subscribe-form__input {
     width: 450px;
@@ -1383,23 +1389,11 @@ a {
   margin-left: 10px;
 }
 
-/* Section main portfolio */
+/* Main-portfolio */
 main {
   background-color: var(--portfolio-main-bg-color);
   padding-top: 94px;
   padding-bottom: 94px;
-}
-
-/* Hidden title */
-.hidden-title {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  overflow: hidden;
 }
 
 /* Button */

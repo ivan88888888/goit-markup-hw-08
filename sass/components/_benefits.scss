@@ -1,4 +1,4 @@
-/* 2. Section Benefits */
+/* Benefits */
 .benefits {
 background-color: var(--benefits-section-bg-color);
 
@@ -44,7 +44,7 @@ padding-bottom: 60px;
 }
 
 .benefits__item:not(:last-child) {
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 767px) {
         margin-bottom: 30px;
         }
 }
