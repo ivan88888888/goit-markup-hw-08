@@ -70,52 +70,9 @@ a {
   color: var(---text-color);
   background-color: var(--header-bg-color);
   border-bottom: 1px solid #ECECEC;
-}
-
-@media screen and (min-width: 1200px) {
-  .header {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .button__menu {
-    display: inline-flex;
-    margin: 0px;
-    padding: 0px;
-    border: none;
-    outline: none;
-    background-color: transparent;
-    padding: 10px 0px 10px 0px;
-  }
-}
-
-.menu__button .mobil-menu-close {
-  display: none;
-}
-
-.menu__button.is-open .mobil-menu-close {
-  display: block;
-}
-
-.menu__button.is-open .icon-menu {
-  display: none;
-}
-
-.is-open {
-  display: inline-flex;
-  margin: 0px;
-  padding: 0px;
-  border: none;
-  outline: none;
-  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .logo {
@@ -317,15 +274,10 @@ a {
   margin-right: auto;
   background-size: cover;
   background-repeat: no-repeat;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobil-1x.jpg);
 }
 
-@media screen and (min-width: 480px) {
-  .overlay {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobil-1x.jpg);
-  }
-}
-
-@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .overlay {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobil-2x.jpg);
   }
