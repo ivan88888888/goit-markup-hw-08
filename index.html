@@ -12,12 +12,12 @@
 <body>
 
     <header class="header">
-        <div class="container">
+        <div class="header__container container">
             <div class="menu">
                 <a href="" class="logo">
                     Web<span class="logo__text">Studio</span>
                 </a>
-                <button 
+                <!-- <button 
                 type="button" 
                 class="menu__button is-open" 
                 data-menu-button>
@@ -25,10 +25,10 @@
                     width="40px" 
                     height="40px" 
                     aria-label="Переключатель мобільного меню">
-                        <use class="mobil-menu-close" href="./images/sprite.svg#mobil-menu-close"></use>
+                        <use class="mobil-menu-close" href="./images/sprite.svg#mobil-menu-clos"></use>
                         <use class="mobil-menu-open" href="./images/sprite.svg#mobil-menu-open"></use>
                     </svg>
-                </button>
+                </button> -->
             </div>
             <nav class="nav">
                 <ul class="nav__list">
@@ -46,14 +46,14 @@
                 <ul class="header-contacts">
                     <li class="header-contacts__item">
                         <a href="mailto:info@devstudio.com" class="header-contacts__link">
-                            <svg class="header-contacts__icon" width="16" height="12">
+                            <svg class="header-contacts__icon--1" width="16" height="12">
                                 <use href="./images/sprite.svg#icon-email"></use>
                             </svg> info@devstudio.com
                         </a>
                     </li>
                     <li class="header-contacts__item">
                         <a href="tel:+380961111111" class="header-contacts__link">
-                            <svg class="header-contacts__icon" width="10" height="16">
+                            <svg class="header-contacts__icon--2" width="10" height="16">
                                 <use href="./images/sprite.svg#icon-phone"></use>
                             </svg>+38 096 111 11 11
                         </a>
@@ -187,7 +187,7 @@
                         ./images/work-1-1x.jpg 1x, 
                         ./images/work-1-2x.jpg 2x"
 
-                        media="(min-width: 1200px">
+                        media="(min-width: 1200px)">
                         <img 
                         src="./images/work-1-2x.jpg" 
                         alt="Програміст пише код">
@@ -205,7 +205,7 @@
                         ./images/work-2-1x.jpg 1x, 
                         ./images/work-2-2x.jpg 2x" 
 
-                        media="(min-width: 1200px">
+                        media="(min-width: 1200px)">
                         <img 
                         src="./images/work-2-2x.jpg" 
                         alt="Дизайнер підирає дизайн">
@@ -223,7 +223,7 @@
                         ./images/work-3-1x.jpg 1x, 
                         ./images/work-3-2x.jpg 2x" 
 
-                        media="(min-width: 1200px">
+                        media="(min-width: 1200px)">
                         <img 
                         src="./images/work-3-2x.jpg" 
                         alt="Дизайнер підбирає колір">
@@ -248,13 +248,13 @@
                     <picture>
                         <source srcset="
                                             ./images/team-1-1x.jpg 1x, 
-                                            ./images/team-1-2x.jpg 2x" media="(min-width: 1200px">
+                                            ./images/team-1-2x.jpg 2x" media="(min-width: 1200px)">
                         <source srcset="
                                             ./images/team-1-tablet-1x.jpg 1x, 
-                                            ./images/team-1-tablet-2x.jpg 2x" media="(min-width: 768px">
+                                            ./images/team-1-tablet-2x.jpg 2x" media="(min-width: 768px)">
                         <source srcset="
                                             ./images/team-1-mobil-1x.jpg 1x, 
-                                            ./images/team-1-mobil-2x.jpg 2x" media="(min-width: 320px">
+                                            ./images/team-1-mobil-2x.jpg 2x" media="(min-width: 320px)">
                         <img src="./images/team-1-2x.jpg" alt="Сотрудник">
                     </picture>
                     <div class="team__container">
@@ -296,13 +296,13 @@
                     <picture>
                         <source srcset="
                                             ./images/team-2-1x.jpg 1x, 
-                                            ./images/team-2-2x.jpg 2x" media="(min-width: 1200px">
+                                            ./images/team-2-2x.jpg 2x" media="(min-width: 1200px)">
                         <source srcset="
                                             ./images/team-2-tablet-1x.jpg 1x, 
-                                            ./images/team-2-tablet-2x.jpg 2x" media="(min-width: 768px">
+                                            ./images/team-2-tablet-2x.jpg 2x" media="(min-width: 768px)">
                         <source srcset="
                                             ./images/team-2-mobil-1x.jpg 1x, 
-                                            ./images/team-2-mobil-2x.jpg 2x" media="(min-width: 320px">
+                                            ./images/team-2-mobil-2x.jpg 2x" media="(min-width: 320px)">
                         <img src="./images/team-2-2x.jpg" alt="Сотрудник">
                     </picture>
                     <div class="team__container">
@@ -344,13 +344,13 @@
                     <picture>
                         <source srcset="
                                             ./images/team-3-1x.jpg 1x, 
-                                            ./images/team-3-2x.jpg 2x" media="(min-width: 1200px">
+                                            ./images/team-3-2x.jpg 2x" media="(min-width: 1200px)">
                         <source srcset="
                                             ./images/team-3-tablet-1x.jpg 1x, 
-                                            ./images/team-3-tablet-2x.jpg 2x" media="(min-width: 768px">
+                                            ./images/team-3-tablet-2x.jpg 2x" media="(min-width: 768px)">
                         <source srcset="
                                             ./images/team-3-mobil-1x.jpg 1x, 
-                                            ./images/team-3-mobil-2x.jpg 2x" media="(min-width: 320px">
+                                            ./images/team-3-mobil-2x.jpg 2x" media="(min-width: 320px)">
                         <img src="./images/team-3-2x.jpg" alt="Сотрудник">
                     </picture>
                     <div class="team__container">
@@ -392,13 +392,13 @@
                     <picture>
                         <source srcset="
                                             ./images/team-4-1x.jpg 1x, 
-                                            ./images/team-4-2x.jpg 2x" media="(min-width: 1200px">
+                                            ./images/team-4-2x.jpg 2x" media="(min-width: 1200px)">
                         <source srcset="
                                             ./images/team-4-tablet-1x.jpg 1x, 
-                                            ./images/team-4-tablet-2x.jpg 2x" media="(min-width: 768px">
+                                            ./images/team-4-tablet-2x.jpg 2x" media="(min-width: 768px)">
                         <source srcset="
                                             ./images/team-4-mobil-1x.jpg 1x, 
-                                            ./images/team-4-mobil-2x.jpg 2x" media="(min-width: 320px">
+                                            ./images/team-4-mobil-2x.jpg 2x" media="(min-width: 320px)">
                         <img src="./images/team-4-2x.jpg" alt="Сотрудник">
                     </picture>
                     <div class="team__container">
