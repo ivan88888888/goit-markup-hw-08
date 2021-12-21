@@ -1,14 +1,5 @@
-/* 3. Section Our team */
 .team {
-    background-color: var(--team-section-bg-color);
-
-    padding-top: 60px;
-    padding-bottom: 60px;
-
-        @media screen and (min-width: 1200px) {
-        padding-top: 94px;
-        padding-bottom: 94px;
-    }
+background-color: var(--team-section-bg-color);
 }
 
 .team__title {
@@ -111,7 +102,6 @@
 .team__social-list {
     padding: 0px;
     padding-left: 0px;
-    // padding-bottom: 30px;
     margin: 0px;
     
     display: flex;

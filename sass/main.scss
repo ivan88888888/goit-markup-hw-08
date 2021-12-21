@@ -1,16 +1,17 @@
 // Перемінні
 @import './utils/variables';
 
-// Studio
+// // Studio
 @import './components/header';
 @import './components/hero';
+@import './components/modal';
 @import './components/benefits';
 @import './components/product';
 @import './components/team';
 @import './components/clients';
 @import './components/footer';
 
-// Portfolio
+// // Portfolio
 @import './components/main-portfolio';
-@import './components/button-portfolio';
+@import './components/buttons-portfolio';
 @import './components/cards-portfolio';

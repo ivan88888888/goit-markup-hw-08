@@ -1,11 +1,7 @@
-/* 3. Section What we do */
 .product {
-    padding-top: 94px;
-    padding-bottom: 94px;
-
-    @media screen and (max-width: 1199px) {
-        display: none;
-        }
+@media screen and (max-width: 1199px) {
+display: none;
+}
 }
 
 .product__title {

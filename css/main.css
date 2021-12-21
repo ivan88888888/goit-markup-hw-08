@@ -23,7 +23,7 @@ body {
 
 img {
   display: block;
-  min-width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -38,6 +38,13 @@ a {
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .container {
@@ -73,7 +80,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  background-color: tomato;
 }
 
 .logo {
@@ -626,11 +632,8 @@ a {
   }
 }
 
-/* Benefits */
 .benefits {
   background-color: var(--benefits-section-bg-color);
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -737,12 +740,6 @@ a {
   }
 }
 
-/* 3. Section What we do */
-.product {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 @media screen and (max-width: 1199px) {
   .product {
     display: none;
@@ -799,18 +796,8 @@ a {
   margin: 0px;
 }
 
-/* 3. Section Our team */
 .team {
   background-color: var(--team-section-bg-color);
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-@media screen and (min-width: 1200px) {
-  .team {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
 }
 
 .team__title {
@@ -953,19 +940,6 @@ a {
   background-color: var(--accent-text-color);
 }
 
-/* Clients */
-.clients {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-@media screen and (min-width: 1200px) {
-  .clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-}
-
 .clients__title {
   font-weight: 700;
   font-size: 28px;
@@ -1064,11 +1038,9 @@ a {
   border-color: var(--accent-text-color);
 }
 
-/* Footer */
 .footer {
   background-color: var(--footer-bg-color);
   text-align: center;
-  padding: 60px 15px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1076,23 +1048,15 @@ a {
     display: flex;
     align-items: baseline;
     justify-content: center;
+    padding-left: 0px;
+    padding-right: 0px;
   }
-}
-
-.hidden-title {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  overflow: hidden;
 }
 
 .footer__conteiner {
   margin-left: auto;
   margin-right: auto;
+  padding: 60px 15px 60px 15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1390,10 +1354,28 @@ a {
 }
 
 /* Main-portfolio */
-main {
+.main {
   background-color: var(--portfolio-main-bg-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .main {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.hidden-title {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
 }
 
 /* Button */
