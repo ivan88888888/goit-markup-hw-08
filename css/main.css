@@ -358,10 +358,10 @@ a {
 
 @media screen and (max-width: 479px) {
   .header-contact__tel {
+    margin-bottom: 32px;
     font-size: 28px;
     line-height: 1.17;
     color: var(--accent-text-color);
-    margin-bottom: 32px;
   }
 }
 
@@ -434,6 +434,10 @@ a {
   .network__list {
     display: none;
   }
+}
+
+.network__item {
+  display: flex;
 }
 
 .network__link {
@@ -1066,6 +1070,7 @@ a {
 @media screen and (min-width: 1200px) {
   .team__title {
     margin-bottom: 50px;
+    font-size: 36px;
   }
 }
 

@@ -276,12 +276,12 @@
   letter-spacing: 0.02em;
 
   @media screen and (max-width: 479px) {
+    margin-bottom: 32px;
+
     font-size: 28px;
     line-height: 1.17;
 
     color: var(--accent-text-color);
-
-    margin-bottom: 32px;
   }
 
   @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -344,6 +344,10 @@
   @media screen and (min-width: 767px) {
     display: none;
   }
+}
+
+.network__item {
+  display: flex;
 }
 
 .network__link {
