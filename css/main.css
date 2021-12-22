@@ -129,12 +129,20 @@ a {
   margin-left: auto;
 }
 
+.icon-menu-close {
+  padding: 16px 15px 16px 0px;
+}
+
 @media screen and (max-width: 767px) {
   .icon-menu-close {
     position: absolute;
     top: 0;
     right: 0;
   }
+}
+
+.menu-container {
+  z-index: 2;
 }
 
 @media screen and (max-width: 767px) {
@@ -173,6 +181,20 @@ a {
     align-items: center;
     display: flex;
     justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mob-container {
+    margin-top: auto;
   }
 }
 
@@ -236,6 +258,12 @@ a {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .header-nav__link {
+    padding: 0px;
+  }
+}
+
 .header-nav__link--current {
   color: var(--accent-text-color);
 }
@@ -255,7 +283,6 @@ a {
 
 @media screen and (max-width: 767px) {
   .header-contact {
-    margin-top: 306px;
     margin-bottom: 60px;
     display: flex;
     flex-direction: column-reverse;
@@ -329,7 +356,16 @@ a {
   letter-spacing: 0.02em;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 320px) {
+  .header-contact__tel {
+    font-size: 28px;
+    line-height: 1.17;
+    color: var(--accent-text-color);
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .header-contact__tel {
     margin-bottom: 32px;
     font-size: 34px;
@@ -409,6 +445,12 @@ a {
   color: var(--accent-text-color);
 }
 
+@media screen and (max-width: 479px) {
+  .network__link {
+    font-size: 10px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .network-line {
     border: none;
@@ -424,13 +466,13 @@ a {
 
 @media screen and (min-width: 320px) {
   .hero {
-    padding: 118px 0px 118px 0px;
+    padding: 118px 0px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
-    padding: 200px 0px 200px 0px;
+    padding: 200px 0px;
   }
 }
 
@@ -1177,7 +1219,7 @@ a {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .clients__list {
     display: flex;
     flex-wrap: wrap;
@@ -1209,7 +1251,7 @@ a {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .clients__item {
     width: calc((100% - 2 * 30px) / 2);
     margin: 15px;
