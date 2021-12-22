@@ -275,7 +275,7 @@
   font-weight: 500;
   letter-spacing: 0.02em;
 
-  @media screen and (min-width: 320px) {
+  @media screen and (max-width: 479px) {
     font-size: 28px;
     line-height: 1.17;
 
