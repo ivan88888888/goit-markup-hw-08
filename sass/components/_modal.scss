@@ -1,20 +1,19 @@
-// Modal
 .backdrop {
-    position: fixed;
-    top: 0px;
-    left: 0px;
+position: fixed;
+top: 0px;
+left: 0px;
 
-    z-index: 1;
+z-index: 1;
 
-    width: 100%;
-    height: 100%;
+width: 100%;
+height: 100%;
 
-    background-color: rgba(0, 0, 0, 0.2);
+background-color: rgba(0, 0, 0, 0.2);
 }
 
 .backdrop.is-hidden  {
-    opacity: 0;
-    pointer-events: none;
+opacity: 0;
+pointer-events: none;
 }
 
 .modal {
@@ -24,21 +23,19 @@
     left: 50%;
     transform: translate(-50%, -50%);
     
-    padding: 40px;
+    padding: 40px 10px;
+    
+    width: 100%;
+    height: 100%;
 
     background-color: #FFFFFF;
 
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 
-        @media screen and (max-width: 479px) {
-        width: 100%;
-        height: 100%;
-        padding: 40px 10px;
-        }
-
         @media screen and (min-width: 480px) {
         width: 450px;
+        padding: 40px;
         }
 
         @media screen and (min-width: 1200px) {
@@ -58,29 +55,21 @@
 .form__title {
     margin-bottom: 12px;
 
+    width: 270px;
+    height: 40px;
+
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
 
     color: #212121;
 
-        @media screen and (max-width: 479px) {
-        width: 270px;
-        height: 40px;
-
-        font-size: 20px;
-        line-height: 1.17;
-        }
-
         @media screen and (min-width: 480px) {
-        margin-bottom: 12px;
-
         width: 370px;
         height: 60px;
 
-        font-size: 20px;
         line-height: 1.5;
         }
         
@@ -88,9 +77,6 @@
         @media screen and (min-width: 1200px) {
         width: 448px;
         height: 23px;
-
-        font-size: 20px;
-        line-height: 1.15;
 
         display: block;
         display: flex;
@@ -108,19 +94,19 @@
     margin-right: auto;
 
     font-weight: 400;
-    font-size: 12px;
+    font-size: 8px;
     line-height: 1.16;
     letter-spacing: 0.01em;
 
     color: var(--second-text-color);
 
-        @media screen and (max-width: 479px) {
-        font-size: 8px;
+        @media screen and (min-width: 480px) {
+        font-size: 12px;
         }
 }
 
 .form__icon {
-    position: relative;
+position: relative;
 }
 
 .form__input {
@@ -139,23 +125,23 @@
 }
 
 .form .form__input:focus {
-    border: 1px solid #2196F3;
-    outline: none;
+border: 1px solid #2196F3;
+outline: none;
 }
 
 .form__svg {
-    position: absolute;
-    top: 11px;
-    left: 12px;
+position: absolute;
+top: 11px;
+left: 12px;
 
-    width: 18px;
-    height: 18px;
+width: 18px;
+height: 18px;
 
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form .form__input:focus + .form__svg {
-    fill: var(--accent-text-color)
+fill: var(--accent-text-color)
 }
 
 .form__textarea {
@@ -163,7 +149,7 @@
     padding: 12px 16px;
     margin-bottom: 20px;
 
-    
+    height: 120px;
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
@@ -173,38 +159,33 @@
 
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    @media screen and (min-width: 480px) {
-        width: 370px;
-        height: 120px;
-    }
-
-    @media screen and (min-width: 1200px) {
+        @media screen and (min-width: 1200px) {
         width: 448px;
         height: 120px;
-    }
+        }
 }
 
 ::placeholder {
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
+font-weight: normal;
+font-size: 12px;
+line-height: 1.16;
+letter-spacing: 0.01em;
 
-    color: rgba(117, 117, 117, 0.5);
+color: rgba(117, 117, 117, 0.5);
 }
 
 .form .form__textarea:focus {
-    border: 1px solid #2196F3;
-    outline: none;
+border: 1px solid #2196F3;
+outline: none;
 }
 
 // Checkbox
 .checkbox {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+display: flex;
+align-items: center;
+justify-content: center;
 
-    margin-bottom: 30px;
+margin-bottom: 30px;
 }
 
 .checkbox__label {
@@ -219,23 +200,25 @@
     justify-content: center;
     align-items: center;
 
-        @media screen and (max-width: 479px) {
-        display: flex;
+        @media screen and (max-width: 384px) {
+        flex-wrap: wrap;
         flex-direction: row;
-        // flex-wrap: wrap;
-        justify-content: center;
-        // align-items: flex-start;
-    }
+
+        height: 38px;
+        }
 
         @media screen and (min-width: 1200px) {
         height: 24px;
+
         font-size: 14px;
         line-height: 1.171;
     }
 }
 
 .checkbox__box {
-    width: 21px;
+    margin-right: 6px;
+
+    width: 16px;
     height: 15px;
 
     background-image: url('../images/checkbox-off.svg');
@@ -247,33 +230,26 @@
     align-items: center;
     justify-content: center;
 
-    @media screen and (min-width: 320px) {
-        margin-right: 0px;
-    }
-
-    @media screen and (min-width: 480px) {
-        width: 16px;
-        height: 15px;
-
+        @media screen and (min-width: 480px) {
         margin-right: 8.38px;
-    }
+        }
 }
 
 .checkbox__input {
-    position: relative;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    display: none;
+position: relative;
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+display: none;
 }
 
 .checkbox__input:checked + .checkbox__box {
-    background-image: url('../images/checkbox-on.svg');
+background-image: url('../images/checkbox-on.svg');
 }
 
 .checkbox__link {
-    text-decoration-line: underline;
-    color: #2196F3;
+text-decoration-line: underline;
+color: #2196F3;
 }
 
 // Button
@@ -300,11 +276,11 @@
     background 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
-    &:focus {
-    background-color: #188CE8;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    }
+        &:hover,
+        &:focus {
+        background-color: #188CE8;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        }
 }
 
 .modal-button-close {
@@ -335,12 +311,12 @@
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
-    &:focus {
-    fill: var(--accent-text-color);
-    }
+        &:hover,
+        &:focus {
+        fill: var(--accent-text-color);
+        }
 
-    @media screen and (max-width: 479px) {
-        margin-bottom: 8px;
-    }
+            @media screen and (max-width: 479px) {
+            margin-bottom: 8px;
+            }
 }

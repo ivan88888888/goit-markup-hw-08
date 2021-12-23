@@ -142,7 +142,7 @@ a {
 }
 
 .menu-container {
-  z-index: 2;
+  z-index: 1;
 }
 
 @media screen and (min-width: 320px) {
@@ -158,10 +158,15 @@ a {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .menu-container {
+    padding: 0px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .menu-container {
     width: 100%;
-    padding: 0px;
   }
 }
 
@@ -445,20 +450,25 @@ a {
 
 .network__item {
   display: flex;
+  align-items: center;
 }
 
 .network__link {
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 12px;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--accent-text-color);
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (min-width: 480px) {
   .network__link {
-    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
   }
 }
 
@@ -599,23 +609,18 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 40px;
+  padding: 40px 10px;
+  width: 100%;
+  height: 100%;
   background-color: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
 
-@media screen and (max-width: 479px) {
-  .modal {
-    width: 100%;
-    height: 100%;
-    padding: 40px 10px;
-  }
-}
-
 @media screen and (min-width: 480px) {
   .modal {
     width: 450px;
+    padding: 40px;
   }
 }
 
@@ -634,29 +639,20 @@ a {
 
 .form__title {
   margin-bottom: 12px;
+  width: 270px;
+  height: 40px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
 }
 
-@media screen and (max-width: 479px) {
-  .form__title {
-    width: 270px;
-    height: 40px;
-    font-size: 20px;
-    line-height: 1.17;
-  }
-}
-
 @media screen and (min-width: 480px) {
   .form__title {
-    margin-bottom: 12px;
     width: 370px;
     height: 60px;
-    font-size: 20px;
     line-height: 1.5;
   }
 }
@@ -665,8 +661,6 @@ a {
   .form__title {
     width: 448px;
     height: 23px;
-    font-size: 20px;
-    line-height: 1.15;
     display: block;
     display: flex;
     justify-content: center;
@@ -682,15 +676,15 @@ a {
   margin-bottom: 4px;
   margin-right: auto;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 8px;
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: var(--second-text-color);
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (min-width: 480px) {
   .form__label {
-    font-size: 8px;
+    font-size: 12px;
   }
 }
 
@@ -732,18 +726,12 @@ a {
   padding: 0px;
   padding: 12px 16px;
   margin-bottom: 20px;
+  height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
   resize: none;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-@media screen and (min-width: 480px) {
-  .form__textarea {
-    width: 370px;
-    height: 120px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -784,11 +772,11 @@ a {
   align-items: center;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 384px) {
   .checkbox__label {
-    display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
+    height: 38px;
   }
 }
 
@@ -801,7 +789,8 @@ a {
 }
 
 .checkbox__box {
-  width: 21px;
+  margin-right: 6px;
+  width: 16px;
   height: 15px;
   background-image: url("../images/checkbox-off.svg");
   background-repeat: no-repeat;
@@ -811,16 +800,8 @@ a {
   justify-content: center;
 }
 
-@media screen and (min-width: 320px) {
-  .checkbox__box {
-    margin-right: 0px;
-  }
-}
-
 @media screen and (min-width: 480px) {
   .checkbox__box {
-    width: 16px;
-    height: 15px;
     margin-right: 8.38px;
   }
 }
@@ -906,7 +887,7 @@ a {
   }
 }
 
-.benefits .benefits__list {
+.benefits__list {
   margin-bottom: 0px;
   margin-top: 0px;
   padding-left: 0px;
@@ -914,20 +895,15 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-  .benefits .benefits__list {
+  .benefits__list {
     display: flex;
     flex-wrap: wrap;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .benefits .benefits__list {
     margin: -15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .benefits .benefits__list {
+  .benefits__list {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -935,14 +911,14 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-  .benefits .benefits__item {
+  .benefits__item {
     width: calc((100% - 2 * 30px) / 2);
     margin: 15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .benefits .benefits__item {
+  .benefits__item {
     width: calc((100% - 4 * 30px) / 4);
   }
 }
@@ -1618,7 +1594,6 @@ a {
   margin-left: 10px;
 }
 
-/* Main-portfolio */
 .main {
   background-color: var(--portfolio-main-bg-color);
   padding-top: 60px;
@@ -1643,7 +1618,6 @@ a {
   overflow: hidden;
 }
 
-/* Button */
 .main__list {
   margin-top: 0px;
   padding: 0px;
@@ -1672,15 +1646,15 @@ a {
   }
 }
 
-.main__item:not(:last-child) {
-  margin-right: 8px;
-}
-
 @media screen and (max-width: 767px) {
   .main__item {
     margin-bottom: 15px;
     margin-top: 15px;
   }
+}
+
+.main__item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .main__button {

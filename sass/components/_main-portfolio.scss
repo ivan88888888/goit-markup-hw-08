@@ -1,28 +1,27 @@
-/* Main-portfolio */
 .main {
-    background-color: var(--portfolio-main-bg-color);
+background-color: var(--portfolio-main-bg-color);
 
-    padding-top: 60px;
-    padding-bottom: 60px;
+padding-top: 60px;
+padding-bottom: 60px;
 
     @media screen and (min-width: 1200px) {
-        padding-top: 94px;
-        padding-bottom: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
     }
 }
 
 .hidden-title {
-    position: absolute;
+position: absolute;
 
-    clip: rect(0 0 0 0);
+clip: rect(0 0 0 0);
 
-    width: 1px;
-    height: 1px;
+width: 1px;
+height: 1px;
 
-    margin: -1px;
-    padding: 0;
+margin: -1px;
+padding: 0;
 
-    border: 0;
+border: 0;
     
-    overflow: hidden;
+overflow: hidden;
 }
